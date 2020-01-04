@@ -10,7 +10,7 @@ include 'inc/header.php';
     <div class="col col-70-md col-60-lg col-center">
         <h2 class="form-signin-heading">Registration</h2>
 
-        <form class="form-container" method="post" action="/inc/doRegister.php">
+        <form class="form-container" method="post" action="inc/registerUser.php">
             <table class="items">
                 <tr>
                     <th><label for="inputUsername" class="sr-only">Username</label></th>
@@ -25,7 +25,7 @@ include 'inc/header.php';
                     <td><input type="password" id="inputPassword" name="confirm_password" class="form-control" placeholder="Confirm Password" required></td>
                 </tr>
             </table>
-            <input class="button button--primary button--topic-php" type="submit" value="Change Password" />
+            <input class="button button--primary button--topic-php" type="submit" value="Sign Up" />
         </form>
     </div>
 </div>
