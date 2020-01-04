@@ -11,6 +11,6 @@ if(!password_verify(request()->get('password'), $user['password'])){
     $session->getFlashBag()->add('error','Invalid Passowrd');
     redirect('/login.php');
 }
-saveUserSession($user);
-redirect('/');
+saveUserData($user);
+
 ?>

@@ -9,8 +9,7 @@ include 'inc/header.php';
     <div class="col-container actions-container">
       <h1>Welcome 
         <?php 
-          global $session; 
-          $user = findUserById($session->get('auth_user_id'));
+          $user = findUserById(decodeAuthCookie('auth_user_id'));
           echo $user['username'] . " !";
         ?>
       </h1>

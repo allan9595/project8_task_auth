@@ -6,8 +6,7 @@ $page = "tasks";
 
 $filter = request()->get('filter');
 if ($filter=='all') {
-    global $session;
-    $tasks = getTasks(null, $session->get('auth_user_id'));
+    $tasks = getTasks(null, decodeAuthCookie('auth_user_id'));
 } elseif ($filter=='complete') {
     $tasks = getCompleteTasks();
 } else {

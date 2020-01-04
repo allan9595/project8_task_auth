@@ -24,12 +24,12 @@ function getTasks($where = null, $userId = null)
 function getIncompleteTasks()
 {
     global $session;
-    return getTasks('status=0',$session->get('auth_user_id'));
+    return getTasks('status=0',decodeAuthCookie('auth_user_id'));
 }
 function getCompleteTasks()
 {
     global $session;
-    return getTasks('status=1',$session->get('auth_user_id'));
+    return getTasks('status=1',decodeAuthCookie('auth_user_id'));
 }
 function getTask($task_id)
 {
