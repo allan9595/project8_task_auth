@@ -32,7 +32,7 @@ include 'inc/header.php';
                         <th><label for="task">Task<span class="required">*</span></label></th>
                         <td><input type="text" id="task" name="task" value="<?php echo htmlspecialchars($task); ?>" /></td>
                     </tr>
-                   </table>
+                </table>
                 <?php
                 if (!empty($task_id)) {
                     echo "<input type='hidden' name='action' value='update' />";

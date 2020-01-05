@@ -52,10 +52,10 @@ include 'inc/header.php';
                             echo " />";
                             echo "</td><td width='100%'>";
 
-                            echo "<a href='task.php?id=" . $item['id'] . "'>" . $item['task'] . "</a>";
+                            echo "<a href='task.php?id=" . htmlspecialchars($item['id']) . "'>" . htmlspecialchars($item['task']) . "</a>";
                             echo "</td><td>";
 
-                            echo "<a href='inc/actions_tasks.php?action=delete&task_id=".$item['id'];
+                            echo "<a href='inc/actions_tasks.php?action=delete&task_id=".htmlspecialchars($item['id']);
                             echo "' onclick=\"return confirm('Are you sure you want tot delete this task?');\"";
                             echo "'>Delete</a>";
                             echo "</td></tr>\n";

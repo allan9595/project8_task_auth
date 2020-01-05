@@ -18,12 +18,12 @@ include 'inc/header.php';
                     <td><input type="password" id="inputCurrentPassword" name="current_password" class="form-control" placeholder="Current Password" required autofocus></td>
                 </tr>
                 <tr>
-                    <th><label for="inputPassword" class="sr-only">New Password<span class="required">*</span></label></th>
-                    <td><input type="password" id="inputPassword" name="password" class="form-control" placeholder="New Password" required></td>
+                    <th><label for="newPassword" class="sr-only">New Password(Password(Must at least 10 character, contain at least one letter, symbol, cap, and number))<span class="required">*</span></label></th>
+                    <td><input type="password" id="newPassword" name="password" class="form-control" placeholder="New Password" required></td>
                 </tr>
                 <tr>
-                    <th><label for="inputPassword" class="sr-only">Confirm New Password<span class="required">*</span></label></th>
-                    <td><input type="password" id="inputPassword" name="confirm_password" class="form-control" placeholder="Confirm New Password" required></td>
+                    <th><label for="confirmPassword" class="sr-only">Confirm New Password<span class="required">*</span></label></th>
+                    <td><input type="password" id="confirmPassword" name="confirm_password" class="form-control" placeholder="Confirm New Password" required></td>
                 </tr>
             </table>
             <input class="button button--primary button--topic-php" type="submit" value="Change Password" />
