@@ -20,7 +20,7 @@ Open a terminal under the folder and type in "composer install"
 
 Then "composer update"
 
-Create a file called .env under /inc, the type in SECRET_KEY = YOUR_SECURE_KEY
+Create a file called .env under /inc, then typing in SECRET_KEY = YOUR_SECURE_KEY
 
 For easier signup process, please use "hardtocracK123$321" as the example password
 
